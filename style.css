@@ -4,23 +4,55 @@ html,body{margin:0;min-height:100%;background:var(--bg);color:var(--text)}
 body{font-family:Arial,Helvetica,sans-serif;line-height:1.5}
 .site-header{height:84px;background:var(--green);display:flex;align-items:center;justify-content:space-between;padding:0 32px;color:#fff}
 .brand,nav a{font-family:Georgia,'Times New Roman',serif;font-weight:700;color:#fff;text-decoration:none}
-.brand{font-size:32px}
+.brand{font-size:26px}
 nav{display:flex;align-items:center;gap:64px}
-nav a{font-size:31px;line-height:1;border-bottom:2px solid transparent;padding-bottom:3px}
+nav a{font-size:25px;line-height:1;border-bottom:2px solid transparent;padding-bottom:3px}
 nav a:hover,nav a.active{border-bottom-color:#fff}
-.hero{max-width:1366px;min-height:calc(100vh - 84px);margin:0 auto;padding:105px 55px 55px;display:grid;grid-template-columns:1fr 1fr;gap:45px;align-items:center}
-.hero-photo{height:550px;display:flex;align-items:flex-end;justify-content:center;overflow:hidden}
-.hero-photo img{width:100%;height:100%;object-fit:contain;object-position:center bottom}
-.hero-copy{padding:0 35px 0 5px;align-self:center}
-.hero h1{font-family:Georgia,'Times New Roman',serif;font-size:66px;line-height:1.05;margin:0 0 48px;font-weight:700;letter-spacing:-1.5px}
-.hero p{font-size:31px;line-height:1.36;margin:0 0 42px;max-width:570px}
+.hero{max-width:1366px;min-height:calc(100vh - 84px);margin:0 auto;padding:52px 55px 55px;display:grid;grid-template-columns:1fr 1fr;gap:45px;align-items:start}
+.hero-photo{height:605px;margin-top:-16px;display:flex;align-items:flex-end;justify-content:center;overflow:hidden}
+.hero-photo img{width:100%;height:100%;object-fit:contain;object-position:center top}
+.hero-copy{padding:0 35px 0 5px;align-self:start}
+.hero h1{font-family:Georgia,'Times New Roman',serif;font-size:53px;line-height:1.05;margin:0 0 48px;font-weight:700;letter-spacing:-1.5px}
+.hero p{font-family:Arial,Helvetica,sans-serif;font-size:22px;line-height:1.36;margin:0 0 32px;max-width:570px}
+.projects{margin-top:8px;max-width:650px}
+.projects h2{font-family:Arial,Helvetica,sans-serif;font-size:22px;line-height:1.2;margin:0 0 12px}
+.projects ul{margin:0;padding-left:24px}
+.projects li{font-family:Arial,Helvetica,sans-serif;font-size:22px;line-height:1.45;margin:5px 0}
+.projects a{color:inherit}
 .page{max-width:1200px;margin:0 auto;padding:70px 45px 100px}
 .page h1{font-family:Georgia,'Times New Roman',serif;font-size:60px;line-height:1.05;margin:0 0 20px}
 .intro{font-size:20px;color:var(--muted);margin:0 0 40px;max-width:700px}
 .video-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:30px}
 .video{aspect-ratio:16/9;background:#111}.video iframe{width:100%;height:100%;border:0}
-.calendar-placeholder{min-height:600px;border:1px dashed var(--line);display:grid;place-items:center;text-align:center;color:var(--muted);font-size:18px}
-.lesson-page{display:grid;grid-template-columns:1fr 1fr;gap:70px;align-items:center}.lesson-photo{aspect-ratio:4/5;background:#e4e0d8;display:grid;place-items:center}.photo-placeholder{color:#888;letter-spacing:.12em;font-size:13px}.lesson-page h1{font-size:56px}.lesson-page p{font-size:21px;line-height:1.55}
+.calendar-embed{width:100%;height:1000px}
+.calendar-embed iframe{display:block;width:100%;height:100%;border:0}
+.lesson-page{display:grid;grid-template-columns:1fr 1fr;gap:70px;align-items:center}
+.lesson-photo{width:100%;max-width:560px;aspect-ratio:16/9;background:#e4e0d8;overflow:hidden}
+.lesson-photo img{width:100%;height:100%;object-fit:contain;display:block}
+.lesson-page h1{font-size:56px}.lesson-page p{font-size:21px;line-height:1.55}
 .narrow{max-width:760px}form{display:grid;gap:10px}label{font-size:16px;margin-top:12px}input,textarea{width:100%;padding:12px;border:1px solid #aaa;background:#fff;font:inherit;font-size:17px}textarea{resize:vertical}.button{display:inline-block;margin-top:12px;padding:11px 18px;background:var(--green);color:#fff;border:0;font:inherit;cursor:pointer;text-decoration:none}
-footer{max-width:1200px;margin:0 auto;padding:25px 45px 45px;color:#666;font-size:13px}
-@media(max-width:800px){.site-header{height:auto;min-height:84px;padding:20px 22px;align-items:flex-start;gap:20px}.brand{font-size:27px}nav{gap:18px;flex-wrap:wrap;justify-content:flex-end}nav a{font-size:22px}.hero{grid-template-columns:1fr;min-height:auto;padding:45px 25px 65px;gap:20px}.hero-photo{height:440px}.hero-copy{padding:0}.hero h1{font-size:48px;margin-bottom:30px}.hero p{font-size:24px}.page{padding:50px 25px 80px}.page h1{font-size:46px}.video-grid{grid-template-columns:1fr}.lesson-page{grid-template-columns:1fr;gap:35px}.lesson-page h1{font-size:46px}footer{padding:25px}}
+footer{max-width:1200px;margin:0 auto;padding:25px 45px 45px;color:#666;font-size:13px;display:flex;align-items:center;justify-content:space-between;gap:20px}
+.social-links{display:flex;align-items:center;gap:14px}
+.social-links a{display:inline-flex;align-items:center;justify-content:center;width:34px;height:34px;color:#666;text-decoration:none}
+.social-links a:hover{color:var(--green)}
+.social-links svg{width:25px;height:25px;fill:currentColor}
+@media(max-width:800px){
+.site-header{height:auto;min-height:84px;padding:20px 22px;align-items:flex-start;gap:20px}
+.brand{font-size:22px}
+nav{gap:18px;flex-wrap:wrap;justify-content:flex-end}
+nav a{font-size:18px}
+.hero{grid-template-columns:1fr;min-height:auto;padding:45px 25px 65px;gap:20px;align-items:start}
+.hero-photo{height:480px;margin-top:0}
+.hero-copy{padding:0}
+.hero h1{font-size:42px;margin-bottom:30px}
+.hero p{font-size:22px}
+.projects h2{font-size:22px}
+.projects li{font-size:22px}
+.page{padding:50px 25px 80px}
+.page h1{font-size:46px}
+.video-grid{grid-template-columns:1fr}
+.lesson-page{grid-template-columns:1fr;gap:35px}
+.lesson-page h1{font-size:46px}
+.calendar-embed{height:800px}
+footer{padding:25px;flex-wrap:wrap}
+}
