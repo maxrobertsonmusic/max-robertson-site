@@ -81,7 +81,7 @@ nav a{font-size:18px}
 
 .hero{grid-template-columns:1fr;min-height:auto;padding:45px 25px 65px;gap:20px;align-items:start}
 
-.hero-photo{height:350px;margin-top:0}
+.hero-photo{height:230px;margin-top:0}
 
 .hero-copy{padding:0}
 
